@@ -15,6 +15,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+# Allow tethering without provisioning app
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
+
 # Disable ADB authentication
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0
