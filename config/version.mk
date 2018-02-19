@@ -14,7 +14,7 @@
 
 #CleanAOSP versioning
 ifndef CLEAN_BUILD_TYPE
-    CLEAN_BUILD_TYPE := Official
+    CLEAN_BUILD_TYPE := j-v.01
 endif
 
 CLEAN_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(CLEAN_BUILD_TYPE)
