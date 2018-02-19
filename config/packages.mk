@@ -1,9 +1,11 @@
 # Additional packages
 PRODUCT_PACKAGES += \
     audio_effects.conf \
+    AndroidMessages \
     Basic \
     CellBroadcastReceiver \
     Development \
+    GBoard \
     LatinIME \
     Launcher3
 
