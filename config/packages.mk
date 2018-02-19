@@ -11,6 +11,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libemoji
 
+# RRO Themes for Oreo OMS
+PRODUCT_PACKAGES += \
+    SettingsBlackThemeOverlay \
+    SettingsDefaultThemeOverlay \
+    SystemBlackThemeOverlay \
+    SystemDefaultThemeOverlay
+
 # SIM Toolkit
 PRODUCT_PACKAGES += \
     Stk
