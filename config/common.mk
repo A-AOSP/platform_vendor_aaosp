@@ -19,10 +19,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
 
-# Disable ADB authentication
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.adb.secure=0
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/caosp/build/tools/backuptool.sh:install/bin/backuptool.sh \
@@ -34,6 +30,13 @@ PRODUCT_COPY_FILES +=  \
     vendor/caosp/prebuilt/common/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/caosp/prebuilt/common/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 
+# Common overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/caosp/overlay/common
+
+# Disable ADB authentication
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=0
+
 # Latin IME lib
 PRODUCT_COPY_FILES += \
     vendor/caosp/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
@@ -42,8 +45,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-# Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/caosp/overlay/common
+# World APN list
+PRODUCT_COPY_FILES += \
+    vendor/caosp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Google sounds
 include vendor/caosp/google/GoogleAudio.mk
