@@ -27,8 +27,8 @@ PRODUCT_COPY_FILES += \
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
-    vendor/caosp/prebuilt/common/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
-    vendor/caosp/prebuilt/common/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+    vendor/caosp/prebuilt/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/caosp/prebuilt/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/caosp/overlay/common
@@ -39,7 +39,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Latin IME lib
 PRODUCT_COPY_FILES += \
-    vendor/caosp/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/caosp/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
 # Enable SIP and VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -47,7 +47,7 @@ PRODUCT_COPY_FILES += \
 
 # World APN list
 PRODUCT_COPY_FILES += \
-    vendor/caosp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/caosp/prebuilt/system/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Google sounds
 include vendor/caosp/google/GoogleAudio.mk
