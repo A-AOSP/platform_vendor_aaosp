@@ -13,12 +13,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libemoji
 
-# RRO Themes for Oreo OMS
+# Themes for Oreo OMS
 PRODUCT_PACKAGES += \
-    SettingsBlackThemeOverlay \
-    SettingsDefaultThemeOverlay \
-    SystemBlackThemeOverlay \
-    SystemDefaultThemeOverlay
+    SettingsBlackTheme \
+    SettingsDefaultTheme \
+    SystemBlackTheme \
+    SystemDefaultTheme
 
 # SIM Toolkit
 PRODUCT_PACKAGES += \
