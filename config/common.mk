@@ -25,6 +25,10 @@ PRODUCT_COPY_FILES += \
     vendor/caosp/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/caosp/build/tools/50-clean.sh:system/addon.d/50-clean.sh
 
+# Boot Animation
+PRODUCT_COPY_FILES += \
+    vendor/caosp/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip
+
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/caosp/prebuilt/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
