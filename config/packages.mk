@@ -1,11 +1,10 @@
 # Additional packages
 PRODUCT_PACKAGES += \
     audio_effects.conf \
-    AndroidMessages \
     Basic \
     CellBroadcastReceiver \
-    Development \
     GBoard \
+    GMessaging \
     LatinIME \
     Launcher3
 
@@ -15,10 +14,10 @@ PRODUCT_PACKAGES += \
 
 # Themes for Oreo OMS
 PRODUCT_PACKAGES += \
-    BlackOrangeTheme \
     SettingsBlackTheme \
     SettingsDefaultTheme \
     SystemBlackTheme \
+    SystemBlackOrangeTheme \
     SystemDefaultTheme
 
 # SIM Toolkit
