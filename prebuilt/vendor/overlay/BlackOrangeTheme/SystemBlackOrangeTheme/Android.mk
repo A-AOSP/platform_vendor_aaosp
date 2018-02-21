@@ -9,4 +9,5 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 LOCAL_SDK_VERSION := current
 LOCAL_AAPT_FLAGS := \
     --auto-add-overlay
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
 include $(BUILD_PACKAGE)
