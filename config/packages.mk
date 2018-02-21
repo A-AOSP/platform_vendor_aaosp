@@ -18,7 +18,6 @@ PRODUCT_PACKAGES += \
     AndroidMessages \
     Basic \
     CellBroadcastReceiver \
-    Development \
     GBoard \
     LatinIME \
     Launcher3
