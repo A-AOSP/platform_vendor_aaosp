@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
 
 # Themes for Oreo OMS
 PRODUCT_PACKAGES += \
+    PixelTheme \
     SettingsBlackTheme \
     SettingsDefaultTheme \
     SystemBlackTheme \
