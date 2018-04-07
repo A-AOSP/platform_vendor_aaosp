@@ -17,8 +17,6 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic \
     CellBroadcastReceiver \
-    GBoard \
-    GMessaging \
     LatinIME \
     Launcher3
 

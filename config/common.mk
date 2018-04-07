@@ -34,6 +34,10 @@ PRODUCT_COPY_FILES +=  \
     vendor/caosp/prebuilt/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/caosp/prebuilt/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 
+# Latin IME lib
+PRODUCT_COPY_FILES += \
+    vendor/caosp/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/caosp/overlay/common
 
