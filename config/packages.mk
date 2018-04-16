@@ -16,9 +16,12 @@
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic \
+    Camera2 \
     CellBroadcastReceiver \
     LatinIME \
-    Launcher3
+    Launcher3 \
+    SnapdragonCamera \
+    SnapdragonGallery
 
 # Emoji
 PRODUCT_PACKAGES += \
