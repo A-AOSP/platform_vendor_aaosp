@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/caosp_shamu.mk
+    $(LOCAL_DIR)/aaosp_shamu.mk

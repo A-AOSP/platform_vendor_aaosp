@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= caosp
+PRODUCT_BRAND ?= aaosp
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -21,25 +21,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/caosp/build/tools/backuptool.sh:install/bin/backuptool.sh \
-    vendor/caosp/build/tools/backuptool.functions:install/bin/backuptool.functions \
-    vendor/caosp/build/tools/50-clean.sh:system/addon.d/50-clean.sh
+    vendor/aaosp/build/tools/backuptool.sh:install/bin/backuptool.sh \
+    vendor/aaosp/build/tools/backuptool.functions:install/bin/backuptool.functions \
+    vendor/aaosp/build/tools/50-clean.sh:system/addon.d/50-clean.sh
 
 # Boot Animation
 PRODUCT_COPY_FILES += \
-    vendor/caosp/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aaosp/prebuilt/system/media/bootanimation.zip:system/media/bootanimation.zip
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
-    vendor/caosp/prebuilt/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
-    vendor/caosp/prebuilt/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+    vendor/aaosp/prebuilt/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/aaosp/prebuilt/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 
 # Latin IME lib
 PRODUCT_COPY_FILES += \
-    vendor/caosp/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/aaosp/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/caosp/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/aaosp/overlay/common
 
 # Disable ADB authentication
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -47,7 +47,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Latin IME lib
 PRODUCT_COPY_FILES += \
-    vendor/caosp/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/aaosp/prebuilt/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
 # Enable SIP and VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -55,13 +55,13 @@ PRODUCT_COPY_FILES += \
 
 # World APN list
 PRODUCT_COPY_FILES += \
-    vendor/caosp/prebuilt/system/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/aaosp/prebuilt/system/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Google sounds
-include vendor/caosp/google/GoogleAudio.mk
+include vendor/aaosp/google/GoogleAudio.mk
 
 # Packages
-include vendor/caosp/config/packages.mk
+include vendor/aaosp/config/packages.mk
 
 # Clean version
-include vendor/caosp/config/version.mk
+include vendor/aaosp/config/version.mk

@@ -1,4 +1,4 @@
-# Copyright (C) 2017 CleanAOSP Project
+# Copyright (C) 2017 Another CleanAOSP Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#CleanAOSP versioning
+# aAOSP versioning
 ifndef CLEAN_BUILD_TYPE
-    CLEAN_BUILD_TYPE := j-v.01
+    CLEAN_BUILD_TYPE := devPreview
 endif
 
 CLEAN_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(CLEAN_BUILD_TYPE)
