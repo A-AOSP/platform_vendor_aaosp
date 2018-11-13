@@ -14,4 +14,5 @@
 # limitations under the License.
 #
 
+add_lunch_combo aaosp_angler-userdebug
 add_lunch_combo aaosp_shamu-userdebug
